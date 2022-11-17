@@ -1,0 +1,161 @@
+body {
+    background-color: #1e1e2e; 
+    background-image: url("background.jpg");
+    background-size: cover;
+    font-family: "Hack Nerd Font";
+    margin: 0px;
+    min-height: 100vh;
+}
+
+#main-container {
+    margin: auto;
+    display: flex;
+    width: 940px;
+    min-height: inherit;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+}
+
+#search {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #181825; 
+    border-radius: 8px;
+    box-shadow: 5px 5px 3px 0px #181825; 
+    box-sizing: border-box;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.button {
+    background-color: #181825; 
+    color: #e2d3ba; 
+    border-radius: 8px;
+    border-style: none;
+}
+
+.button:active {
+    background-color: #f2cdcd;
+}
+
+#search-engine-select {
+    padding: 0.6em 10px;
+    border-right: 10px solid transparent;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+#search-input-cont {
+    flex: 1;
+}
+
+#search-input {
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms ease;
+    border: none;
+    outline: none;
+    color: #e2d3ba; 
+    padding: 0.6em 0;
+    width: 100%;
+    font-family:"Hack Nerd Font"; 
+    font-size: 18px;
+}
+
+#search-input:focus {
+    background-size: 0 0.1em, 100% 0.1em;
+}
+
+#search-button {
+    padding: 0.6em 12px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.link-group {
+    padding: 10px;
+    gap:     10px;
+    background-color: #181825; 
+    border-radius: 8px;
+    box-shadow: 5px 5px 3px 0px #181825; 
+    flex: 1 1 0%;
+} 
+
+.link-group-title {
+    color: #94e2d5; 
+    font-family: "Hack Nerd Font";
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 0px;
+    width: 100%;
+}
+
+.link-text {
+    display: inline-block;
+    padding: 2px 0px;
+    font-family: "Hack Nerd Font";
+    font-size: 19px;
+    background-size: 0 0.1em;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 250ms, color 250ms;
+    color: #f2cdcd; 
+}
+
+a:hover > .link-text {
+    background-size: 100% 0.1em;
+    color: #b4befe; 
+}
+
+@media (max-width: 800px) {
+    #main-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 650px) {
+    #search-engine-cont, #search-engine-select {
+        width: 100%;
+    }
+
+    .link-group {
+        flex: 1 1 40%;
+    }
+}
+
+@media (max-width: 350px) {
+    .link-group {
+        flex: 100%;
+    }
+
+    #search-button-cont, #search-button {
+        width: 100%;
+    }
+}

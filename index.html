@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homepage</title>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+    </head>
+    <body>
+        <div id="main-container">
+            <div id="search">
+                <div id="search-engine-cont">
+                    <select name="search-engine" class="button" id="search-engine-select">
+                        <option value="ddg">DuckDuckGo</option>
+                        <option value="brave">Brave</option>
+                        <option value="google" selected="selected">Google</option>
+                    </select>
+                </div>
+                <div id="search-input-cont">
+                    <input id="search-input" placeholder="Enter search term here" autofocus/>
+                </div>
+                <div id="search-button-cont">
+                    <button class="button" id="search-button" onclick="doSearch()">Search</button>
+                </div>
+            </div>
+            <div id="links">
+                <div class="link-group" id="general">
+                    <ul>
+                        <li class="link-group-title">General</li>
+                        <li><a href="https://proton.me/mail"><span class="link-text">Protonmail</span></a></li>
+                        <li><a href="https://www.gmail.com"><span class="link-text">Gmail</span></a></li>
+                        <li><a href="https://www.amazon.com"><span class="link-text">Amazon</span></a></li>
+                        <li><a href="https://www.itsfoss.com"><span class="link-text">Foss</span></a></li>
+                        <li><a href="https://voidlinux.org/packages/"><span class="link-text">Void Packages</span></a></li>
+                        <li><a href="https://docs.voidlinux.org/"><span class="link-text">Void Docs</span></a></li>
+                        <li><a href="https://wiki.archlinux.org"><span class="link-text">Arch Wiki</span></a></li>
+                    </ul>
+                </div>
+                <div class="link-group" id="dev">
+                    <ul>
+                        <li class="link-group-title">Dev</li>
+                        <li><a href="https://www.github.com/tijso"><span class="link-text">GitHub</span></a></li>
+                        <li><a href="https://www.gitlab.com"><span class="link-text">Gitlab</span></a></li>
+                        <li><a href="https://www.stackoverflow.com"><span class="link-text">Stack Overflow</span></a></li>
+                        <li><a href="https://developer.mozilla.org"><span class="link-text">MDN Web Docs</span></a></li>
+                        <li><a href="https://dev.to/"><span class="link-text">Dev Community</span></a></li>
+                    </ul>
+                </div>
+                <div class="link-group" id="media">
+                    <ul>
+                        <li class="link-group-title">Media</li>
+                        <li><a href="https://tv.youtube.com/?onboard=3"><span class="link-text">YouTube TV</span></a></li>
+                        <li><a href="https://www.disneyplus.com/home"><span class="link-text">Disney+</span></a></li>
+                        <li><a href="https://www.netflix.com/browse"><span class="link-text">Netflix</span></a></li>
+                        <li><a href="https://play.hbomax.com/signIn"><span class="link-text">Hbo Max</span></a></li>
+                        <li><a href="https://www.youtube.com"><span class="link-text">YouTube</span></a></li>
+                        <li><a href="https://www.odysee.com"><span class="link-text">Odysee</span></a></li>
+                        <li><a href="https://www.rumble.com"><span class="link-text">Rumble</span></a></li>
+                        <li><a href="https://fmovies.to/home"><span class="link-text">FMovies</span></a></li>
+                        <li><a href="https://open.spotify.com"><span class="link-text">Spotify</span></a></li>
+                    </ul>
+                </div>
+                <div class="link-group" id="socials">
+                    <ul>
+                        <li class="link-group-title">Socials</li>
+                        <li><a href="https://www.twitch.tv/directory/following/live"><span class="link-text">Twitch</span></a></li>
+                        <li><a href="https://www.instagram.com"><span class="link-text">Instagram</span></a></li>
+                        <li><a href="https://www.twitter.com"><span class="link-text">Twitter</span></a></li>
+                        <li><a href="https://www.reddit.com"><span class="link-text">Reddit</span></a></li>
+                        <li><a href="https://news.ycombinator.com/"><span class="link-text">Hacker News</span></a></li>
+                        <li><a href="https://www.discord.com"><span class="link-text">Discord</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
